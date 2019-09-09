@@ -1,7 +1,7 @@
 ### _ADSR Envelope Extension for the Precision Waveform Generator FeatherWing_
 # AD9833_ADSR_FeatherWing
 
-![Image of Envelope](https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/photos/smooth_ADSR_social.png)
+![Image of Envelope](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/smooth_ADSR_social.png)
 
 ## Overview
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
@@ -13,19 +13,19 @@ MIDI note input was received by a Classic MIDI Interface FeatherWing from a vari
 
 See https://github.com/CedarGroveStudios/AD9833_FeatherWing, https://github.com/CedarGroveStudios/AD5245_Digital_Pot, and https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
 
-A test of signal amplitude control using the AREF pin of the Feather M4 Express' DAC was performed during prototyping. Details of that test can be found here: https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/M4_DAC_AREF_test.md
+A test of signal amplitude control using the AREF pin of the Feather M4 Express' DAC was performed during prototyping. Details of that test can be found here: https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/M4_DAC_AREF_test.md
 
 ADSR envelope code was tested with a Feather M4 Express using CircuitPython version 4.1.0 rc-1. Example MIDI synthesizer and sweep generator code is provided in the repository (sweep example video: https://youtu.be/O1vMfLoCWzg). 
   
 ## AD5245 Digital Potentiometer for Envelope Control
 Unlike a DAC's reference voltage input, a digital potentiometer typically doesn't require a reference bias, eliminating the distortion that happens when the DAC's reference voltage is less than about 1v. The digital potentiometer's internal MOSFET switches are biased differently than a DAC, allowing the potentiometer to control voltage values between ground and Vcc (as with the AD5245) or up to the value of a separate wiper bias pin (as with the DS3502).
 
-![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/photos/ADSR_digipot_concept.png)
-![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/photos/DS1Z_QuickPrint12.png)
+![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/ADSR_digipot_concept.png)
+![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/DS1Z_QuickPrint12.png)
 
 The resulting envelope met the original design expectations for distortionless scaling the waveform's amplitude. The only issue faced was limited I2C data transfer rates during short-duration envelope segments such as shown during the Sustain segment below.
 
-![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/photos/DS1Z_QuickPrint13.png)
+![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/DS1Z_QuickPrint13.png)
 
 The latest version of the envelope segment control algorithm was modified to use a fixed time interval approach rather than a variable time interval based on segment duration. In the newest code, the digital potentiometer updates regularly every 1ms during segment generation, a speed easily accommodated by CircuitPython and the Feather M4 Express.
 
