@@ -1,19 +1,15 @@
 ### _ADSR Envelope Extension for the Precision Waveform Generator FeatherWing_
-# AD9833_ADSR_FeatherWing
+# AD9833_ADSR_FeatherWing  -- UNTESTED
 
 ![Image of Envelope](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/smooth_ADSR_social.png)
 
 ## Overview
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
-The AD9833 Precision Waveform Generator FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The AD5245 Digital Potentiometer Breakout is a 256-step 10K potentiometer on a small breadboardable PCB. The breakout has connections for I2C and the potentiometer A, B, and W (wiper) pins.
+The AD9833 Precision Waveform Generator FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C.
 
 UPDATE: The revised PCB design will include additional power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product. The new design will also accomodate substitution of the low-power AD9837 waveform generator device (thanks to @jeffwurz).
 
-MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources.
-
-See https://github.com/CedarGroveStudios/AD9833_FeatherWing, https://github.com/CedarGroveStudios/AD5245_Digital_Pot, and https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
-
-A test of signal amplitude control using the AREF pin of the Feather M4 Express' DAC was performed during prototyping. Details of that test can be found here: https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/M4_DAC_AREF_test.md
+MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources. See https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
 
 ADSR envelope code was tested with a Feather M4 Express using CircuitPython version 4.1.0 rc-1. Example MIDI synthesizer and sweep generator code is provided in the repository (sweep example video: https://youtu.be/O1vMfLoCWzg). 
   
