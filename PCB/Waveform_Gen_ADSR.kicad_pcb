@@ -11,7 +11,7 @@
 
   (page USLetter)
   (title_block
-    (title Waveform_Generator_ADSR)
+    (title ADSR_Waveform_Generator)
     (date 2019-09-09)
     (rev v00)
     (company "Cedar Grove Studios")

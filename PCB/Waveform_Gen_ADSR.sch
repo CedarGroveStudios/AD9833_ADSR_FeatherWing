@@ -5,7 +5,7 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Waveform_Generator_ADSR"
+Title "ADSR_Waveform_Generator"
 Date "2019-09-09"
 Rev "v00"
 Comp "Cedar Grove Studios"

@@ -6,8 +6,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Waveform_Generator_ADSR"
-Date "2019-09-06"
-Rev "v02"
+Date "2019-09-09"
+Rev "v00"
 Comp "Cedar Grove Studios"
 Comment1 ""
 Comment2 ""
@@ -917,4 +917,8 @@ F 3 "" H 4525 6500 50  0001 C CNN
 $EndComp
 Text Notes 8350 2075 0    50   ~ 0
 GAIN_BW = 45MHz\n9.75MHz BW at gain of 4.6\n
+Text Notes 2525 4050 0    50   ~ 0
+Change footprint to include AD9837's grounding pad
+Text Notes 1200 2375 0    50   ~ 0
+Consider a note for AD9837's lower clock speed
 $EndSCHEMATC
