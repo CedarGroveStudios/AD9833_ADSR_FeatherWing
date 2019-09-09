@@ -1,10 +1,10 @@
 ### _ADSR Envelope Extension for the Precision Waveform Generator FeatherWing_
-# AD9833_ADSR
+# AD9833_ADSR_FeatherWing
 
 ![Image of Envelope](https://github.com/CedarGroveStudios/AD9833_ADSR/blob/master/photos/smooth_ADSR_social.png)
 
 ## Overview
-The AD9833 ADSR project is a software and hardware extension of work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
+The AD9833 ADSR FeatherWing project is a software and hardware extension of work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
 The AD9833 Precision Waveform Generator FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The AD5245 Digital Potentiometer Breakout is a 256-step 10K potentiometer on a small breadboardable PCB. The breakout has connections for I2C and the potentiometer A, B, and W (wiper) pins.
 
 MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources.
