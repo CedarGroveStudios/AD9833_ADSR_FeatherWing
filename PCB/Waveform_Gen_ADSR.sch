@@ -921,4 +921,8 @@ Text Notes 2525 4050 0    50   ~ 0
 Change footprint to include AD9837's grounding pad
 Text Notes 1200 2375 0    50   ~ 0
 Consider a note for AD9837's lower clock speed
+Text Notes 4100 1550 0    50   ~ 0
+TANT
+Text Notes 8600 5925 0    50   ~ 0
+TANT
 $EndSCHEMATC
