@@ -910,7 +910,7 @@ $EndComp
 Text Notes 7825 1475 0    50   ~ 0
 GAIN_BW = 45MHz\n9.75MHz BW at gain of 4.6\n
 Text Notes 3025 5475 0    50   ~ 0
-ALTERNATE FOOTPRINT
+Alternate Wave Gen\nFootprint
 Text Notes 1825 3100 0    50   ~ 0
 AD9837: ASV-16.000MHZ-E-T
 Text Notes 3575 950  0    50   ~ 0
@@ -1017,5 +1017,5 @@ Connection ~ 2850 5275
 Wire Wire Line
 	2850 5275 2850 5200
 Text Notes 4675 4425 0    50   ~ 0
-ENVELOPE\nPOTENTIOMETER
+Envelope\nPotentiometer
 $EndSCHEMATC
