@@ -7,7 +7,7 @@
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
 The AD9833 Precision Waveform Generator FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C.
 
-UPDATE: The revised PCB design will include additional power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product. The new design will also accomodate substitution of the low-power AD9837 waveform generator device (thanks to @jeffwurz).
+UPDATE: The revised PCB design will include additional power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product. A new design (in a separate repo) will also accomodate substitution of the low-power AD9837 waveform generator device (thanks to @jeffwurz).
 
 MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources. See https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
 
@@ -43,7 +43,8 @@ The latest version of the envelope segment control algorithm was modified to use
 1)  A digital potentiometer approach is very viable and eliminates the DAC reference input bias distortion issue. 
 7)  The digital potentiometer's 256-step resolution appears to be sufficient for artifactless envelope generation.
 ## Next Steps
-  * Redesign the PCB to include the digital potentiometer, improved noise filtering, increased output bandwidth, and allow substitution of the AD9837 device.
+  * Redesign the PCB to include the digital potentiometer, improved noise filtering, and increased output bandwidth.
+  * Create a version of the PCB for the low-power AD9837 device.
   * Design a Eurorack-compatible version that provides MIDI and CV/Gate inputs.
   * Design a desktop test equipment version with display and selector knob.
   *	Incorporate the knowledge and experience gained in this project into the design of an Arbitrary Waveform Generator FeatherWing.
