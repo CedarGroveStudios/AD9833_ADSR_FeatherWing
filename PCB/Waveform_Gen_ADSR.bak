@@ -6,7 +6,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "ADSR_Waveform_Generator"
-Date "2019-09-10"
+Date "2019-09-13"
 Rev "v00"
 Comp "Cedar Grove Studios"
 Comment1 ""
@@ -909,25 +909,10 @@ F 3 "" H 9650 5750 50  0001 C CNN
 $EndComp
 Text Notes 7825 1475 0    50   ~ 0
 GAIN_BW = 45MHz\n9.75MHz BW at gain of 4.6\n
-Text Notes 3025 5475 0    50   ~ 0
-Alternate Wave Gen\nFootprint
-Text Notes 1825 3100 0    50   ~ 0
-AD9837: ASV-16.000MHZ-E-T
 Text Notes 3575 950  0    50   ~ 0
 TANT
 Text Notes 3725 7225 0    50   ~ 0
 TANT
-$Comp
-L AD9837BCPZ-RL7:AD9837BCPZ-RL7 U4
-U 1 1 5D78AAF8
-P 2750 4300
-F 0 "U4" H 3400 3875 60  0000 L CNN
-F 1 "AD9837BCPZ-RL7" H 3375 3775 60  0000 L CNN
-F 2 "Housings_CSP:AD9837BCPZ-RL7" H 4150 4540 60  0001 C CNN
-F 3 "" H 2750 4300 60  0000 C CNN
-	1    2750 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2700 2025 3250 2025
 Wire Wire Line
@@ -942,80 +927,6 @@ Text Label 4950 1825 1    50   ~ 0
 COMP
 Text Label 3900 1375 1    50   ~ 0
 CAP
-$Comp
-L power:GND #PWR0123
-U 1 1 5D7BF4F0
-P 2550 5300
-F 0 "#PWR0123" H 2550 5050 50  0001 C CNN
-F 1 "GND" H 2555 5127 50  0000 C CNN
-F 2 "" H 2550 5300 50  0001 C CNN
-F 3 "" H 2550 5300 50  0001 C CNN
-	1    2550 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0124
-U 1 1 5D7BF4F6
-P 2850 5300
-F 0 "#PWR0124" H 2850 5050 50  0001 C CNN
-F 1 "GNDA" H 2855 5127 50  0000 C CNN
-F 2 "" H 2850 5300 50  0001 C CNN
-F 3 "" H 2850 5300 50  0001 C CNN
-	1    2850 5300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 5300 2850 5275
-Wire Wire Line
-	2550 5300 2550 5200
-$Comp
-L power:+3.3VA #PWR0125
-U 1 1 5D7C3EFC
-P 2850 3575
-F 0 "#PWR0125" H 2850 3425 50  0001 C CNN
-F 1 "+3.3VA" H 2865 3748 50  0000 C CNN
-F 2 "" H 2850 3575 50  0001 C CNN
-F 3 "" H 2850 3575 50  0001 C CNN
-	1    2850 3575
-	1    0    0    -1  
-$EndComp
-Text Label 1500 4100 0    50   ~ 0
-SCLK
-Text Label 1500 4200 0    50   ~ 0
-MOSI
-Text Label 1500 4300 0    50   ~ 0
-~WAVE_CS
-Wire Wire Line
-	1500 4300 1900 4300
-Wire Wire Line
-	1500 4200 1900 4200
-Wire Wire Line
-	1500 4100 1900 4100
-Text Label 1500 4900 0    50   ~ 0
-25MHZ_CLK
-Text Label 3800 4400 2    50   ~ 0
-VOUT
-Text Label 3800 4100 2    50   ~ 0
-COMP
-Text Label 2550 3600 1    50   ~ 0
-CAP
-Wire Wire Line
-	3500 4400 3800 4400
-Wire Wire Line
-	3500 4100 3800 4100
-Wire Wire Line
-	2850 3650 2850 3575
-Wire Wire Line
-	2550 3450 2550 3650
-Wire Wire Line
-	1500 4900 1900 4900
-Wire Wire Line
-	3150 5200 3150 5275
-Wire Wire Line
-	3150 5275 2850 5275
-Connection ~ 2850 5275
-Wire Wire Line
-	2850 5275 2850 5200
 Text Notes 4675 4425 0    50   ~ 0
 Envelope\nPotentiometer
 $EndSCHEMATC
