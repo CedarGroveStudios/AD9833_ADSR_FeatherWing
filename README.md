@@ -5,7 +5,7 @@
 
 ## Overview
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
-The AD9833 ADSR FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0.5Hz to 100KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C. This PCB version includes enhanced power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product.
+The AD9833 ADSR FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of 0.5Hz to 100KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C. This PCB version includes enhanced power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product.
 
 Example MIDI synthesizer and sweep generator code is provided in the repository (sweep example video: https://youtu.be/O1vMfLoCWzg). 
 MIDI synthesizer and sweep generator code was tested with a Feather M4 Express using CircuitPython version 4.1.0 rc-1.
@@ -25,7 +25,7 @@ The resulting envelope met the original design expectations for distortionless s
 The latest version of the envelope segment control algorithm was modified to use a fixed time interval approach rather than a variable time interval based on segment duration. In the newest code, the digital potentiometer updates regularly every 1ms during segment generation, a speed easily accommodated by CircuitPython and the Feather M4 Express.
 
 ## Primary Project Objectives
-1)	Generate a smooth ADSR modulated waveform from the AD9833.  
+1)	Generate a smooth ADSR modulated waveform from the AD9833 across the audio spectrum (1Hz to 20KHz).  
 2)	Implement with CircuitPython code.
 3)  Develop CircuitPython libraries for the AD9833 and AD5245.
 4)  Improve output bandwidth.
