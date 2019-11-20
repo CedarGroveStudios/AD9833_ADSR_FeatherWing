@@ -1,5 +1,5 @@
 # AD9833_ADSR_FeatherWing
-### _ADSR Envelope Extension for the Precision Waveform Generator FeatherWing_
+### _ADSR Envelope Extension of the original AD9833 Waveform Generator FeatherWing_
 
 ![Image of FeatherWing](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/Waveform_Gen_ADSR_social.jpg)
 
