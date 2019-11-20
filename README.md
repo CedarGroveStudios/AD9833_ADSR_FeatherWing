@@ -12,7 +12,7 @@ MIDI synthesizer and sweep generator code was tested with a Feather M4 Express u
 
 MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources. See https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
 
-OSH Park shared PCB project: https://oshpark.com/shared_projects/nDZsxzWR <img src="https://oshpark.com/assets/badge-5b7ec47045b78aef6eb9d83b3bac6b1920de805e9a0c227658eac6e19a045b9c.png" alt="Order from OSH Park"></img></a>
+OSH Park shared PCB project: https://oshpark.com/shared_projects/nDZsxzWR
 
 ## AD5245 Digital Potentiometer for Envelope Control
 Unlike using the Feather's internal DAC as a multiplying DAC by applying a waveform to the DAC's reference voltage input, the digital potentiometer doesn't require a reference bias, eliminating the distortion that happens when the DAC's reference voltage is less than about 1v. The digital potentiometer's internal MOSFET switches are biased differently than a DAC, allowing the AD5245 potentiometer to control voltage values between ground and Vcc.
