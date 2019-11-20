@@ -47,4 +47,4 @@ The latest version of the envelope segment control algorithm was modified to use
   * Design a desktop test equipment version with display and selector knob.
   *	Incorporate the knowledge and experience gained in this project into the design of an Arbitrary Waveform Generator FeatherWing.
 
-![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/Waveform_Gen_ADSR_close_wide.png)
+![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/Waveform_Gen_ADSR_wide.png)
