@@ -26,6 +26,8 @@ The resulting envelope met the original design expectations for distortionless s
 
 The latest version of the envelope segment control algorithm was modified to use a fixed time interval approach rather than a variable time interval based on segment duration. In the newest code, the digital potentiometer updates regularly every 1ms during segment generation, a speed easily accommodated by CircuitPython and the Feather M4 Express.
 
+![FeatherWing Implementation Chart](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/docs/FeatherWing_Impl_Chart.png)
+
 ## Primary Project Objectives
 1)	Generate a smooth ADSR modulated waveform from the AD9833 across the audio spectrum (1Hz to 20KHz).  
 2)	Implement with CircuitPython code.
