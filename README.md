@@ -1,20 +1,19 @@
 ### _ADSR Envelope Extension for the Precision Waveform Generator FeatherWing_
-# AD9833_ADSR_FeatherWing  -- UNTESTED
+# AD9833_ADSR_FeatherWing
 
 ![Image of Envelope](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/smooth_ADSR_social.png)
 
 ## Overview
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
-The AD9833 Precision Waveform Generator FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C.
+The AD9833 ADSR FeatherWing is an Adafruit Feather-compatible module. The Waveform Generator portion, controlled by SPI, produces an op-amp buffered sine, triangle, or square wave output with a practical frequency range of approximately 0 to 300KHz with 0.1Hz resolution. The on-board AD5245 Digital Potentiometer is a 256-step 10K potentiometer controlled by I2C. This PCB version includes enhanced power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product.
 
-UPDATE: The revised PCB design will include additional power supply noise reduction and an improved output buffer amplifier with higher gain-bandwidth product. A new design (in a separate repo) will also accomodate substitution of the low-power AD9837 waveform generator device (thanks to @jeffwurz).
+Example MIDI synthesizer and sweep generator code is provided in the repository (sweep example video: https://youtu.be/O1vMfLoCWzg). 
+MIDI synthesizer and sweep generator code was tested with a Feather M4 Express using CircuitPython version 4.1.0 rc-1.
 
 MIDI note input was received by a Classic MIDI Interface FeatherWing from a variety of MIDI sources. See https://github.com/CedarGroveStudios/Classic_MIDI_FeatherWing for details.
 
-ADSR envelope code was tested with a Feather M4 Express using CircuitPython version 4.1.0 rc-1. Example MIDI synthesizer and sweep generator code is provided in the repository (sweep example video: https://youtu.be/O1vMfLoCWzg). 
-  
 ## AD5245 Digital Potentiometer for Envelope Control
-Unlike a DAC's reference voltage input, a digital potentiometer typically doesn't require a reference bias, eliminating the distortion that happens when the DAC's reference voltage is less than about 1v. The digital potentiometer's internal MOSFET switches are biased differently than a DAC, allowing the potentiometer to control voltage values between ground and Vcc (as with the AD5245) or up to the value of a separate wiper bias pin (as with the DS3502).
+Unlike using the Feather's internal DAC as a multiplying DAC by applying a waveform to the DAC's reference voltage input, the digital potentiometer doesn't require a reference bias, eliminating the distortion that happens when the DAC's reference voltage is less than about 1v. The digital potentiometer's internal MOSFET switches are biased differently than a DAC, allowing the AD5245 potentiometer to control voltage values between ground and Vcc.
 
 ![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/ADSR_digipot_concept.png)
 ![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/DS1Z_QuickPrint12.png)
