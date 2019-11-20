@@ -39,8 +39,8 @@ The latest version of the envelope segment control algorithm was modified to use
 4)	GitHub public repository page
 5)	Project description and report
 ## Concepts Learned
-1)  The digital potentiometer approach is very viable and eliminates the DAC reference input bias distortion issue. 
-7)  The digital potentiometer's 256-step resolution appears to be sufficient for artifactless envelope generation.
+1)  The digital potentiometer approach is very viable and eliminates the multiplying DAC reference input bias distortion issue. 
+2)  The digital potentiometer's 256-step resolution appears to be sufficient for artifactless envelope generation.
 ## Next Steps
   * Create a version of the PCB for the low-power AD9837 device (thanks to @jeffwurz).
   * Design a Eurorack-compatible version that provides MIDI and CV/Gate inputs.
