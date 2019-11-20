@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.0.0-rc2-dev-444-g2974a2c10)*
-G04 #@! TF.CreationDate,2019-10-20T12:44:52-07:00*
+G04 #@! TF.CreationDate,2019-11-19T23:53:18-08:00*
 G04 #@! TF.ProjectId,Waveform_Gen_ADSR,57617665666F726D5F47656E5F414453,v00*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.0.0-rc2-dev-444-g2974a2c10)) date 10/20/19 12:44:52*
+G04 Created by KiCad (PCBNEW (5.0.0-rc2-dev-444-g2974a2c10)) date 11/19/19 23:53:18*
 %MOMM*%
 %LPD*%
 G01*

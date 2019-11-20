@@ -908,7 +908,7 @@ F 3 "" H 9650 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7825 1475 0    50   ~ 0
-GAIN_BW = 45MHz\n9.75MHz BW at gain of 4.6\n
+GAIN_BW = 45MHz\n9.75MHz BW at gain of 4.6\nPractical range from 0.5Hz to 100kHz\n
 Text Notes 3575 950  0    50   ~ 0
 TANT
 Text Notes 3725 7225 0    50   ~ 0
