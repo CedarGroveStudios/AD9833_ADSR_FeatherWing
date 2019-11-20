@@ -1,7 +1,7 @@
 # AD9833_ADSR_FeatherWing
 ### _ADSR Envelope Extension of the original AD9833 Waveform Generator FeatherWing_
 
-![Image of FeatherWing](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/Waveform_Gen_ADSR_social.jpg)
+![Image of FeatherWing](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/Waveform_Gen_ADSR_close_wide.png)
 
 ## Overview
 The AD9833 ADSR FeatherWing project is a software and hardware extension of previous work done on the AD9833 Precision Waveform Generator FeatherWing. The ADSR project adds output amplitude control to simulate the Attack-Decay-Sustain-Release envelope needed to simulate musical instrument sounds.
