@@ -1,4 +1,4 @@
-# AD9833_FeatherWing_ADSR_digipot_v10.py
+# AD9833_FeatherWing_ADSR_MIDI_v10.py
 # 2019-08-25 Cedar Grove Studios
 # Simple MIDI voice module using Cedar Grove AD9833 Precision Waveform
 #     Generator FeatherWing, Cedar Grove Classic MIDI FeatherWing, and
@@ -80,7 +80,7 @@ def wave_adsR(s=(1.0,0), r=(0.0,0), level=1.0):
     amplitude_stepper(s[0], r[0], r[1], level)  # release
 
 # *** Main code area ***
-print("AD9833_FeatherWing_ADSR_digipot_v10.py")
+print("AD9833_FeatherWing_ADSR_MIDI_v10.py")
 print("Input channel:", midi.in_channel + 1 )
 
 # establish initial parameters
