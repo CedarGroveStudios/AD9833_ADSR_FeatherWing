@@ -20,7 +20,7 @@ Unlike using the Feather's internal DAC as a multiplying DAC by applying a wavef
 ![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/ADSR_digipot_concept.png)
 ![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/DS1Z_QuickPrint12.png)
 
-The resulting envelope met the original design expectations for distortionless scaling the waveform's amplitude. The only issue faced was limited I2C data transfer rates during short-duration envelope segments such as shown during the Sustain segment below.
+The resulting envelope met the original design expectations for distortionless scaling of the waveform's amplitude. The only issue faced was limited I2C data transfer rates during short-duration envelope segments such as shown during the Sustain segment below.
 
 ![Digital Potentiometer Circuit](https://github.com/CedarGroveStudios/AD9833_ADSR_FeatherWing/blob/master/photos/DS1Z_QuickPrint13.png)
 
