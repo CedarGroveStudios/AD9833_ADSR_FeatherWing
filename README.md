@@ -1,3 +1,10 @@
+# MOVED TO: CedarGroveStudios/PCB_AD9833_ADSR_FeatherWing
+https://github.com/CedarGroveStudios/PCB_AD9833_ADSR_FeatherWing.git
+
+# This repo will be retired 2022-12-01
+
+
+
 # AD9833_ADSR_FeatherWing
 ### _An amplitude-controlled version of the original AD9833 Waveform Generator FeatherWing_
 
